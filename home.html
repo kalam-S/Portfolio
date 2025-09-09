@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  
+
+    <header class="header">
+        <a href="#" class="logo"><img src="asset/icons8-html.gif" alt=""></a>
+        <nav class="navbar">
+            <a href="#about" class="active">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+            <a href="index.html">Login/signup</a>
+        </nav>
+        <div id="menu-icon" class="fas fa-bars"></div>
+    </header>
+
+    <section class="section about" id="about">
+        <div class="about-content">
+            <h1 class="heading">Hi, I'm <span class="highlight">Md Abul Kalam sarder <br></span></h1>
+            
+            <h3>Web Developer</h3>
+            <p>
+                As a skilled web designer and developer, I specialize in building digital experiences that are both visually compelling and technically robust. My passion lies in a holistic approach, where I use my design expertise to create intuitive user interfaces (UI/UX) and then bring them to life with clean, efficient code.
+
+I'm proficient in core front-end technologies like HTML, CSS, and JavaScript, and I pride myself on crafting responsive, high-performance websites. I believe the best solutions are a seamless blend of aesthetics and functionality. My goal is to build powerful, user-friendly websites that look great, work flawlessly, and leave a lasting impression.
+            </p>
+            <div class="social-media">
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                <a href="twitter/kalamsarder"><i class="fab fa-twitter"></i></a>
+                <a href="linkdin/kalamsarder"><i class="fab fa-linkedin-in"></i></a>
+                <a href="github/kalamsarder"><i class="fab fa-github"></i></a>
+            </div>
+            <button class="btn"><a href="asset/Kalam_Sarder_CV .doc">DownLoad CV</button>
+        </div>
+   
+</a>
+        <div class="about-img">
+            <img src="asset/kalam.jpg"kalam sarder" width="100px" height="400px">
+        </div>
+    </section>
+
+    <section class="section projects" id="projects">
+        <h2 class="heading">My <span class="highlight">Projects</span></h2>
+        <div class="project-container">
+            <div class="project-box">
+                <img src="asset/original-.webp" alt="Project 1">
+                <div class="project-layer">
+                    <h4>Project 1</h4>
+                    <p>Login page</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="project-box">
+                <img src="asset/3.webp" alt="Project 2">
+                <div class="project-layer">
+                    <h4>Project 2</h4>
+                    <p>Theme carousel</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="project-box">
+                <img src="asset/2.gif" alt="Project 3">
+                <div class="project-layer">
+                    <h4>Project 3</h4>
+                    <p>E-commers website product carousel</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section skills" id="skills">
+        <h2 class="heading">My <span class="highlight">Skills</span></h2>
+        <div class="skills-container">
+            <div class="skill-box">
+                <i class="fab fa-html5"></i>
+                <h3>HTML</h3>
+            </div>
+            <div class="skill-box">
+                <i class="fab fa-css3-alt"></i>
+                <h3>CSS</h3>
+            </div>
+            <div class="skill-box">
+                <i class="fab fa-js"></i>
+                <h3>JavaScript</h3>
+            </div>
+            <div class="skill-box">
+                <i class="fab fa-react"></i>
+                <h3>React</h3>
+            </div>
+        </div>
+    </section>
+
+    <section class="section contact" id="contact">
+        <h2 class="heading">Contact <span class="highlight">Me</span></h2>
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email Address">
+            </div>
+            <div class="input-box">
+                <input type="text" placeholder="Mobile Number">
+                <input type="text" placeholder="Email Subject">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 kalam sarder. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js">
+
+        // Toggle menu icon and navbar on click
+let menuIcon = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar');
+
+menuIcon.onclick = () => {
+    menuIcon.classList.toggle('fa-xmark');
+    navbar.classList.toggle('active');
+};
+
+// Remove active class from navbar when a link is clicked
+navbar.onclick = () => {
+    menuIcon.classList.remove('fa-xmark');
+    navbar.classList.remove('active');
+};
+
+// Add scrolled class to header on scroll
+let header = document.querySelector('header');
+
+window.addEventListener('scroll', () => {
+    header.classList.toggle('scrolled', window.scrollY > 0);
+});
+    </script>
+</body>
+</html>
